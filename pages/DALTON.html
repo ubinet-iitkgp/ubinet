@@ -172,15 +172,74 @@
           
         <div class="position-relative border-radius-xl overflow-hidden shadow-lg mb-7">
           <div class="container border-bottom">
-                <h2>DALTON: A Ubiquitous Indoor Pollution Sensing Dataset</h2>
+            <image src="../assets/img/dalton_icon.png" width="15%"/>
+            <p style="font-size: 26px; display: inline;vertical-align:text-top;color:black;padding-left: 5px;">the largest indoor activity and air pollution dataset with <u><b>D</b></u>istributed <u><b>A</b></u>ir qua<u><b>L</b></u>i<u><b>T</b></u>y m<u><b>ON</b></u>itors</p>
           </div>
           <div class="tab-content tab-space p-3">
-            <p> Lorel Ipsum Lorel Ipsum Lorel Ipsum Lorel Ipsum Lorel Ipsum</p>
+            <div class="alert alert-light" role="alert">
+              Releasing spatiotemporal measurements of air quality from <b>30 indoor sites</b> over <b>six months</b> during the summer and winter seasons <b>(89.1M samples, totaling 13646 hours of air quality data and 3957 activity annotations from 24 participants among 46 occupants)</b>
+            </div>
             
-            <h5>Dataset Descriptio</h5>
+            <image src="../assets/img/dalton_collection.png" width="70%" class="rounded mx-auto d-block"/>
+
+
+            <div>
+              <h2>Key Features</h2>
+              <hr/>
+
+              <ul style="padding-left: 5%; padding-right: 5%;">
+                <li style="padding-bottom: 10px;"><b>Uniqueness:</b> This dataset offers extensive indoor air quality data from 30 indoor sites in developing Indian communities, annotated with daily activities and real-time pollution dynamics, filling a gap in large-scale datasets for developing nations.
+                    <ul>
+                        <li style="padding-bottom: 10px;"><u><b><i>Multi-device:</i></b></u> Contains pollution measurements from multiple devices per site, with up to six devices in residential households, offering unique observations of pollutant spread.</li>
+                        <li style="padding-bottom: 10px;"><u><b><i>Indoor types:</i></b></u> Captures data from five types of locations (residential households, studio apartments, food canteens, classrooms, research labs) across 30 sites.</li>
+                        <li style="padding-bottom: 10px;"><u><b><i>Frequent pollutants:</i></b></u> Includes readings for indoor temperature, humidity, and eight pollutants (CO2, VOC, PM1, PM2.5, PM10, NO2, C2H5OH, CO).</li>
+                        <li style="padding-bottom: 10px;"><u><b><i>Human annotations:</i></b></u> Real-time activity labels collected via a speech-to-text app, providing necessary context for interpreting pollution readings.</li>
+                        <li style="padding-bottom: 10px;"><u><b><i>Multi-city deployment:</i></b></u> Data from four regions in India, covering rural, suburban, and urban populations.</li>
+                        <li style="padding-bottom: 10px;"><u><b><i>Dataset duration:</i></b></u> Data collected over six months (Summer and Winter), capturing seasonal pollution dynamics and behavioral variations.</li>
+                    </ul>
+                </li>
+                <li style="padding-bottom: 10px;"><b>Potential Applications:</b> In general, the dataset can be used in the following applications.
+                    <ul>
+                        <li style="padding-bottom: 10px;"><u><b><i>Pollution Source Identification and Activity Monitoring:</i></b></u> Records instances of pollution patterns associated with specific activities, aiding in source detection and activity classification.</li>
+                        <li style="padding-bottom: 10px;"><u><b><i>Analysis of Spreading and Accumulation Patterns in Different Floor Plans:</i></b></u> Useful for studying pollutant spread and accumulation in varied room structures.</li>
+                        <li style="padding-bottom: 10px;"><u><b><i>Healthy Home Characterization and Indoor Design Improvement:</i></b></u> Helps identify features to mitigate pollution spread, supporting better household health and modern indoor designs.</li>
+                        <li style="padding-bottom: 10px;"><u><b><i>Smart Device Control:</i></b></u> Enables design of control policies for ACs, exhausts, air purifiers, and other ventilation devices.</li>
+                    </ul>
+                </li>
+                <li style="padding-bottom: 10px;"><b>Benchmarking & ML Applications:</b> Enables research in pollution source detection, activity classification, pollutant spread in varied floor plans, and intelligent device control (e.g., air purifiers).</li>
+
+                <li style="padding-bottom: 10px;"><b>Dataset Size:</b> Includes 89.1 million samples over six months, with 13,646 hours of air quality data and 3,957 activity annotations.</li>
+
+            </ul>
+            
+            </div>
+            
+            <div class="container d-flex justify-content-center align-items-center" style="padding-top: 2em;">
+              <a href="https://arxiv.org/abs/2407.14501" class="link-primary" style="margin-right: 10px;"><u>Paper</u></a>
+              <a href="https://medium.com/@prasenjitkarmakar52282/dalton-indoor-air-quality-dataset-with-activities-of-daily-living-15fe8696644d" class="link-primary" style="margin-right: 10px;"><u>Blog</u></a>
+              <a href="https://github.com/prasenjit52282/dalton-dataset" class="link-primary" style="margin-right: 10px;"><u>GitHub Repository</u></a>
+            </div>
+
+            <!-- <h5>Dataset Descriptio</h5>
               <p>Lorel Ipsum Lorel Ipsum Lorel Ipsum Lorel Ipsum Lorel Ipsum Lorel Ipsum Lorel Ipsum
                   <iframe width="380" height="212" src="https://www.youtube.com/embed/edMFZH90iB8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </p> 
+              </p>  -->
+
+              <div style="padding-top: 5em;">
+                <p style="text-align: center;font-size: 26px;font-weight: 400;">Supported by</p>
+                <image src="../assets/img/dalton_supported.png" width="50%" class="rounded mx-auto d-block"/>
+              </div>
+
+              <div>
+              <h2>Publications</h2>
+              <hr/>
+              <ol>
+                <li style="padding-bottom: 10px;">Karmakar, P., Pradhan, S. and Chakraborty, S., Indoor Air Quality Dataset with Activities of Daily Living in Low to Middle-income Communities. In Thirty-eighth Conference on Neural Information Processing Systems Datasets and Benchmarks Track, 2024</li>
+                <li style="padding-bottom: 10px;">Karmakar, P., Pradhan, S. and Chakraborty, S., September. Exploiting Air Quality Monitors to Perform Indoor Surveillance: Academic Setting. In Adjunct Proceedings of the 26th International Conference on Mobile Human-Computer Interaction, 2024</li>
+                <li style="padding-bottom: 10px;">Karmakar, P., Pradhan, S. and Chakraborty, S., Exploring Indoor Air Quality Dynamics in Developing Nations: A Perspective from India. In ACM Journal on Computing and Sustainable Societies, 2(3), 2024</li>
+              </ol>
+
+              </div>
           </div>
         </div>
           
