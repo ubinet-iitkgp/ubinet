@@ -20,7 +20,8 @@
   <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
   <link rel="icon" type="image/png" href="../assets/img/favicon.png">
   <title>
-    Private Certifier Intersection
+    DriSafe: Developing Ubiquitous Systems for Safe Driving under Diverse Driving Micro-cultures
+
   </title>
   <!--     Fonts and icons     -->
   <link rel="stylesheet" type="text/css"
@@ -171,8 +172,7 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center mx-auto my-auto">
-            <h1 class="text-white">Private Certifier Intersection
-
+            <h1 class="text-white">DriSafe: Developing Ubiquitous Systems for Safe Driving in Diverse Driving Micro-cultures
             </h1>
             <!-- <p class="lead mb-4 text-white opacity-8">We’re constantly trying to push the boundaries of sensing and systems research. Come along if you share the same ambition.</p>
             <button class="btn bg-white text-dark">Research Highlights</button>
@@ -200,85 +200,147 @@
 
         <div class="position-relative border-radius-xl overflow-hidden shadow-lg mb-7">
           <div class="container border-bottom">
-            <image src="../assets/img/PriCertInt_logo.png" width="15%" />
-            <p style="font-size: 26px; display: inline;vertical-align:text-top;color:black;padding-left: 5px;">Private Certifier Intersection
+            <image src="../assets/img/drisafe_logo.png" width="15%" />
+            <p style="font-size: 26px; display: inline;vertical-align:text-top;color:black;padding-left: 5px;">Developing Ubiquitous Systems for Safe Driving under Diverse Driving Micro-cultures
             </p>
           </div>
           <div class="tab-content tab-space p-3">
             <div class="alert alert-custom" role="alert">
-                This paper introduces the problem of Private Certifier Intersection (PCI), which allows mutually distrusting parties to establish a trust basis for cross-validation of claims if they have one or more trust authorities (certifiers) in common. This is one of the essential requirements for verifiable presentations in Web 3.0, since it provides additional privacy without compromising on decentralization. We then design and implement two provably secure and practically efficient PCI protocols supporting validation of digital signature-based certificates. 
+                <p>Drive tourism has become increasingly popular in the last decade; however, driving through a new city is challenging as the road, and traffic environments vary significantly across cities. A driver habitual to driving in one city may face severe difficulty adapting to a different driving environment, leading to road fatalities. Intrinsically, each city has its driving style, which is governed by the geospatial properties of the city, its traffic and road conditions, etc., that influence the actions taken by the driver. We developed a personalized driving guideline recommendation system while understanding the driving style specific to the driver and the city in which they are traveling. The system develops an explainable domain adaptation model to generate a set of critical guidelines and recommend the same to the driver while driving in a new city.</p>
+                <p>Another important aspect of driving across different environments is to correctly identify the driving anomalies. An anomaly in driving refers to any deviation from typical or expected driving behavior, manifesting in various forms and may indicate unsafe or irregular driving practices. Notably, anomaly signatures vary across various driving environments; so, we need a domain-adaptive method for extracting the anomaly information. In subsequent work, we developed DoAssist, a novel method that leverages driver-specific spatiotemporal multimodal data to detect driving anomalies in real-time and provides alerts to the driver. The core idea of the proposed solution is to explore additional sensing modalities available with modern wristbands, such as physiological signals, to augment the IMU data with rich contextual information. </p>
+                
+
             </div>
 
-            <image src="../assets/img/PriCertIntsys.png" width="90%" class="rounded mx-auto d-block" />
+            <image src="../assets/img/drisafe_sys.png" width="50%" class="rounded mx-auto d-block" />
 
 
             <div>
-              <h2>Key Contributions</h2>
+              <h2>Key Features</h2>
               <hr />
-              <ul>
-                <li style="padding-bottom: 10px;"><u><b><i>Formalization of PCI:</i></b></u> We introduced the problem of Private Certifier Intersection (PCI) and formalized it. We defined PCI under the Simplified Universal Composability (SUC) framework and introduced two variants:
-                    <ul>
-                        <li><b>PCI-Any</b> – Valid for any claim.</li>
-                        <li><b>PCI-All</b> – Valid for all claims.</li>
-                    </ul>
-                </li>
-                <li style="padding-bottom: 10px;"><u><b><i>MPC for Elliptic Curve Pairings:</i></b></u> A novel secret-sharing-based MPC framework that efficiently supports elliptic curve operations, including pairings, with malicious security against a dishonest majority.</li>
-                <li style="padding-bottom: 10px;"><u><b><i>Efficient Two-Party PCI Protocols:</i></b></u> Design and implementation of:
-                    <ul>
-                        <li><b>PCI-Any-DC (ECDSA-based)</b> – Supports widely used ECDSA certificates while optimizing expensive elliptic curve operations outside the MPC protocol.</li>
-                        <li><b>PCI-All (BLS-based)</b> – Leverages BLS signature aggregation to efficiently validate certificates over all claims with minimal elliptic curve pairing operations.</li>
-                    </ul>
-                </li>
-                <li style="padding-bottom: 10px;"><u><b><i>Optimized Implementation:</i></b></u> We extended MP-SPDZ with OpenSSL and RELIC libraries to implement PCI protocols efficiently using a black-box approach for elliptic curve operations.</li>
-                <li style="padding-bottom: 10px;"><u><b><i>Performance Evaluation and Real-World Feasibility:</i></b></u> We benchmarked the protocols in both LAN and WAN settings, placing parties in three geographic regions across two continents. In an intercontinental WAN setup, the PCI-Any-DC and PCI-All protocols execute in under a minute for input sets of size 40. The evaluation highlights the scalability and efficiency of the protocols, demonstrating their applicability to real-world decentralized trust scenarios, including Web 3.0 and verifiable credentials.</li>
-            </ul>
-            
-            
-              <!-- <div class="alert alert-light" role="alert" style="margin-top: 2em;margin-bottom: 2em;">
-                <b>Licensing:</b>The platform source and the collected dataset is free to download and can be used with <b>GNU Affero General Public License</b> for non-commercial purposes. All participants signed forms consenting to the collected mmwave dataset and activity labels for non-commercial research purposes. The institute’s ethical review committee has approved the field study (Order No: <u>IIT/SRIC/DEAN/2023</u>, Dated July 31, 2023).
-              </div> -->
+                  <ul>
+                    <li style="padding-bottom: 10px;"><u><b><i>On-device:</i></b></u> The developed approaches use on-device techniques and models to extract the required features and perform the model analysis; therefore, can be seamlessly adopted in existing ADAS platforms.</li>
+                    <li style="padding-bottom: 10px;"><u><b><i>Lightweight:</i></b></u> The proposed approaches use lightweight unsupervised or semi-supervised ML/DL models, making them suitable to work over low-resource devices, like a smart DashCam.</li>
+                    <li style="padding-bottom: 10px;"><u><b><i>Adaptable and domain-invariant:</i></b></u> The proposed approaches consider domain-invariant methods, and therefore adaptable to diverse driving conditions.</li>
+                    <li style="padding-bottom: 10px;"><u><b><i>Large-scale multi-modal dataset:</i></b></u> To model and test the proposed approaches, we collected a large-scale dataset over two different countries, containing multi-modal information. The dataset has been made public for community use.</li>
+                  </ul>
+
+              <div class="alert alert-light" role="alert" style="margin-top: 2em;margin-bottom: 2em;">
+                <b>Licensing:</b>The platform source and the collected dataset is free to download and can be used with GNU General Public License for non-commercial purposes. All participants signed forms consenting to the collected dataset and associated labels for non-commercial research purposes. The institute’s ethical review committee has approved the field study (Order No: IIT/SRIC/DEAN/2023, Dated July 31, 2023).
+              </div>
 
             </div>
 
             <div class="container d-flex justify-content-center align-items-center">
 
-              <a href="https://www.ndss-symposium.org/ndss-paper/private-certifier-intersection/" class="btn btn-primary" role="button" style="margin-right: 10px;" target="_blank">Paper (NDSS'23)</a>
-              <a href="https://ieeexplore.ieee.org/document/9805532/" class="btn btn-primary" role="button" style="margin-right: 10px;" target="_blank">Paper (ICBC'22)</a>
-              <a href="https://github.com/ghoshbishakh/pci" class="btn btn-primary" role="button" style="margin-right: 10px;" target="_blank">Source Code</a>
-              <a href="https://research.ibm.com/blog/blockchain-networks-private-certifier-intersection" class="btn btn-primary" role="button" style="margin-right: 10px;" target="_blank">Blog from IBM</a>
+              <a href="https://doi.org/10.1145/3609337" class="btn btn-primary" role="button"
+                style="margin-right: 10px;" target="_blank">Paper</a>
+              <a href="https://github.com/SugandhPargal/GRIDS" class="btn btn-primary" role="button" style="margin-right: 10px;" target="_blank">GitHub
+                Repository</a>
+                <a href="https://github.com/SugandhPargal/DDD" class="btn btn-primary" role="button" target="_blank">Dataset</a>
             </div>
 
             <!-- authors -->
             <div style="padding-top: 1em;">
               <p style="text-align: center;font-size: 26px;font-weight: 400;">Contributors</p>
             </div>
-            
-            <ul>
-                <li><a href="https://ghoshbishakh.github.io/" target="_blank">Bishakh Chandra Ghosh</a> (Indian Institute of Technology Kharagpur)</li>
-                <li><a href="https://research.ibm.com/people/sikhar-patranabis" target="_blank">Sikhar Patranabis</a> (IBM Research - India)</li>
-                <li><a href="https://research.ibm.com/people/dhinakaran-vinayagamurthy" target="_blank">Dhinakaran Vinayagamurthy</a> (IBM Research - India)</li>
-                <li><a href="https://research.ibm.com/people/venkatraman-ramakrishna" target="_blank">Venkatraman Ramakrishna</a> (IBM Research - India)</li>
-                <li><a href="https://research.ibm.com/people/krishnasuri-narayanam" target="_blank">Krishnasuri Narayanam</a> (IBM Research - India)</li>
-                <li><a href="https://sandipc-iitkgp.github.io/sandip-web/" target="_blank">Sandip Chakraborty</a> (Indian Institute of Technology Kharagpur)</li>
-            </ul>
-            
-            
-            
+            <div class="row row-cols-1 row-cols-md-4 g-4 col-10" style="margin-left: auto;margin-right: auto;margin-bottom: 2em;">
+              <div class="col">
+                <div class="card">
+                  <a href="https://sugandhpargal.github.io/sugandh20/">
+                  <img src="../assets/img/member/sugandh.png" class="card-img-top" alt="sugandh">
+                  </a>
+                  <div class="card-body">
+                    <h5 class="card-title" style="font-size: medium;">Sugandh Pargal</h5>
+                    <p class="card-text">IIT Kharagpur, India</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <a href="https://debasree08.github.io/debasree/">
+                  <img src="../assets/img/member/debasree.jpeg" class="card-img-top" alt="debasree">
+                  </a>
+                  <div class="card-body">
+                    <h5 class="card-title" style="font-size: medium;">Debasree Das</h5>
+                    <p class="card-text">IIT Kharagpur, India</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <a href="https://cse.iitkgp.ac.in/~bivasm/">
+                  <img src="../assets/img/member/bivas.jpg" class="card-img-top" alt="bivas">
+                  </a>
+                  <div class="card-body">
+                    <h5 class="card-title" style="font-size: medium;">Bivas Mitra</h5>
+                    <p class="card-text">IIT Kharagpur, India</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <a href="http://linkedin.com/in/shdeldari">
+                  <img src="../assets/img/member/shohreh.png" class="card-img-top" alt="Shohreh">
+                  </a>
+                  <div class="card-body">
+                    <h5 class="card-title" style="font-size: medium;">Shohreh Deldari</h5>
+                    <p class="card-text">UNSW, Australia</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <a href="https://research.unsw.edu.au/people/professor-salil-kanhere">
+                  <img src="../assets/img/member/salil.png" class="card-img-top" alt="salil">
+                  </a>
+                  <div class="card-body">
+                    <h5 class="card-title" style="font-size: medium;">Salil Kanhere</h5>
+                    <p class="card-text">UNSW, Australia</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <a href="https://sandipc-iitkgp.github.io/sandip-web/">
+                  <img src="../assets/img/member/sandip.jpeg" class="card-img-top" alt="sandip">
+                  </a>
+                  <div class="card-body">
+                    <h5 class="card-title" style="font-size: medium;">Sandip Chakraborty</h5>
+                    <p class="card-text">IIT Kharagpur, India</p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
 
             <!-- Teaser Video -->
-            <div style="padding-top: 0.2em;" >
-                <p style="text-align: center;font-size: 26px;font-weight: 400;padding-bottom: 0.1em;">Presentation Video</p>
-                <p style="text-align: center;"><iframe width="500" height="315" src="https://www.youtube.com/embed/RYO3eiSBoAE?si=r1lQ7JEtz9KviYrz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
-              </div>
+            <div style="text-align: center; font-size: 26px; font-weight: 400; padding-bottom: 0.5em;">
+                Teaser Video
+            </div>
+            
+            <div style="display: flex; justify-content: center; gap: 10px;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/-W7_TCLYRx4" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+            
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/o-WuRktSTeY" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+            </div>
+            <br>            
 
             <div>
               <h2>Publications</h2>
               <hr />
               <ol>
-                <li style="padding-bottom: 10px;">Bishakh Chandra Ghosh, Sikhar Patranabis, Dhinakaran Vinayagamurthy, Venkatraman Ramakrishna, Krishnasuri Narayanam, and Sandip Chakraborty. "Private certifier intersection." NDSS, 2023.</li>
-                <li style="padding-bottom: 10px;">Bishakh Chandra Ghosh, Dhinakaran Vinayagamurthy, Venkatraman Ramakrishna, Krishnasuri Narayanam, and Sandip Chakraborty. "Privacy-Preserving Negotiation of Common Trust Anchors Across Blockchain Networks." In 2022 IEEE International Conference on Blockchain and Cryptocurrency (ICBC), pp. 1-5. IEEE, 2022.</li>
-                
+                <li style="padding-bottom: 10px;">Sugandh Pargal, Sandip Chakraborty, Bivas Mitra, Shohreh Deldari and Salil S Kanhere: "DoAssist: Domain Invariant Driving Anomaly Detection based on Spatiotemporal Driving Data", IEEE PerCom 2025 Workshops (PerVehicle)</li>
+                <li style="padding-bottom: 10px;">Sugandh Pargal, Sandip Chakraborty, Shohreh Deldari, and Salil S Kanhere: "Domain Invariant Driving Behaviour Prediction based on Autoencoder Anomaly Detection", IEEE PerCom 2024 Work in progress</li>
+                <li style="padding-bottom: 10px;">Sugandh Pargal, Debasree Das, Bikash Sahoo, Bivas Mitra, Sandip Chakraborty: "GRIDS: Personalized Guideline Recommendations while Driving Through a New City", ACM Transactions on Recommender Systems, Volume 2, Issue 2, Article No.: 16, Pages 1 - 28</li>
               </ol>
 
             </div>
@@ -287,9 +349,10 @@
             <div class="mb-2">
               <h2>Funding and Support</h2>
               <hr />
-              <image src="../assets/img/beeguard_fund.png" width="30%" class="rounded mx-auto d-block" />
+              <image src="../assets/img/drisafe_fund.png" width="50%" class="rounded mx-auto d-block" />
+              
               <hr/>
-              <div style="text-align: center;padding-left: 5%; padding-right: 5%;">For questions and general feedback, contact <a href="https://ghoshbishakh.github.io/">Bishakh Ghosh</a>
+              <div style="text-align: center;padding-left: 5%; padding-right: 5%;">For questions and general feedback, contact <a href="https://sugandhpargal.github.io/sugandh20/">Sugandh Pargal</a>
               </div>
             </div>
 
